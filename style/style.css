@@ -5,9 +5,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #3C3C3C !important;
+    background-color: #FFFF !important;
 }
 
+/* Navbar */
 .navbar-brand {
     font-weight: 700;
     font-size: 20px !important; 
@@ -21,7 +22,7 @@ body {
     font-weight: 700 ;
 }
 
-.button-primary {
+.button-secondary {
     width: 133px;
     height: 40px;
     background-color: #FFFFFF;
@@ -29,4 +30,52 @@ body {
     border: none;
     font-size: 16px;
     font-weight: 700;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Hero Section */
+#hero{
+    background : linear-gradient(160deg, var(--pr-color), #1D1D1D);
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero{
+    height: 100%;
+}
+
+.hero-tagline h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.hero-tagline p {
+    color : #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    line-height: 30px;
+    width: 85%;
+}
+
+.button-lg-primary{
+    width: 237px;
+    height: 70px;
+    background-color: #ffff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+
 }
