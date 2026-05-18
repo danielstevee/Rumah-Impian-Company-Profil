@@ -10,6 +10,39 @@ body {
 
 /* Navbar */
 
+/* Navbar Default (Hero Section) */
+.navbar-custom{
+    transition: all 0.3s ease-in-out;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+/* Text putih saat di hero */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand{
+    color: #FFFFFF !important;
+    transition: all 0.3s ease;
+}
+
+/* Navbar saat scroll */
+.navbar-scrolled{
+    background-color: #FFFFFF !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 15px 0;
+}
+
+/* Text hitam saat scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-brand{
+    color: var(--pr-color) !important;
+}
+
+/* Active link */
+.navbar-scrolled .nav-link.active{
+    font-weight: 700;
+    color: #000000 !important;
+}
+
 .navbar{
     z-index: 4;
 }
@@ -224,7 +257,7 @@ h2{
 }
 
 .input-cari{
-    height: 88px;
+    height: 80px;
 }
 
 .input-cari:focus{
@@ -233,7 +266,7 @@ h2{
 
 .input-cari .button-secondary{
     width: 200px;
-    height: 88px;
+    height: 80px;
     background-size: rgba(255, 255, 255, 0.8);
     color: var(--pr-color);
     font-size: 18px;
@@ -243,8 +276,8 @@ h2{
 }
 
 .input-cari .button-primary{
-    height: 88px;
-    background-color: var(--pr-color);
+    height: 80px;
+    background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
     color: #FFFFFF;
     border:none;
     font-size: 36px;
