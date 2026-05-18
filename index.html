@@ -130,6 +130,184 @@
         </div>
     </section>
 
+    <!-- Search Section -->
+    <section id="search" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>
+                        Temukan Rumah Impianmu
+                    </h2>
+                    <p>
+                        Sekarang Anda dapat menghemat semua hal stress, waktu, dan biaya <br>
+                        tersembunyi, dengan ratusan rumah untuk anda
+                    </p>
+                </div>
+
+                <div class="col-10 mx-auto mt-5">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                        <!-- Jual -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="jual-tab" data-bs-toggle="tab" data-bs-target="#Jual"
+                                type="button" role="tab">
+                                Jual
+                            </button>
+                        </li>
+
+                        <!-- Sewa -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sewa-tab" data-bs-toggle="tab" data-bs-target="#Sewa"
+                                type="button" role="tab">
+                                Sewa
+                            </button>
+                        </li>
+
+                        <!-- Property Baru -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="property-tab" data-bs-toggle="tab"
+                                data-bs-target="#Property-Baru" type="button" role="tab">
+                                Property Baru
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="myTabContent">
+
+                        <!-- TAB JUAL -->
+                        <div class="tab-pane fade show active" id="Jual" role="tabpanel">
+
+                            <div class="input-group mb-3 input-cari">
+
+                                <!-- Dropdown Tipe Rumah -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-house"></i> Tipe Rumah
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Rumah Minimalis</a></li>
+                                    <li><a class="dropdown-item" href="#">Rumah Modern</a></li>
+                                    <li><a class="dropdown-item" href="#">Villa</a></li>
+                                </ul>
+
+                                <!-- Dropdown Harga -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-currency-dollar"></i> Range Harga
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">100jt - 300jt</a></li>
+                                    <li><a class="dropdown-item" href="#">300jt - 500jt</a></li>
+                                    <li><a class="dropdown-item" href="#">500jt+</a></li>
+                                </ul>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control"
+                                    placeholder="Cari Berdasarkan Lokasi, ID, Property">
+
+                                <!-- Button -->
+                                <button class="button-primary" type="button">
+                                    Cari
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <!-- TAB SEWA -->
+                        <div class="tab-pane fade" id="Sewa" role="tabpanel">
+
+                            <div class="input-group mb-3 input-cari">
+
+                                <!-- Dropdown Tipe -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-building"></i> Tipe Sewa
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Apartemen</a></li>
+                                    <li><a class="dropdown-item" href="#">Kos</a></li>
+                                    <li><a class="dropdown-item" href="#">Rumah Kontrak</a></li>
+                                </ul>
+
+                                <!-- Dropdown Harga -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-wallet2"></i> Budget
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">500rb - 1jt</a></li>
+                                    <li><a class="dropdown-item" href="#">1jt - 3jt</a></li>
+                                    <li><a class="dropdown-item" href="#">3jt+</a></li>
+                                </ul>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control" placeholder="Cari Lokasi Sewa">
+
+                                <!-- Button -->
+                                <button class="button-primary" type="button">
+                                    Cari
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- TAB PROPERTY BARU -->
+                        <div class="tab-pane fade" id="Property-Baru" role="tabpanel">
+
+                            <div class="input-group mb-3 input-cari">
+
+                                <!-- Dropdown Developer -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-buildings"></i> Developer
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ciputra</a></li>
+                                    <li><a class="dropdown-item" href="#">Pakuwon</a></li>
+                                    <li><a class="dropdown-item" href="#">Sinarmas Land</a></li>
+                                </ul>
+
+                                <!-- Dropdown Lokasi -->
+                                <button class="button-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bi bi-geo-alt"></i> Lokasi
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Surabaya</a></li>
+                                    <li><a class="dropdown-item" href="#">Jakarta</a></li>
+                                    <li><a class="dropdown-item" href="#">Bandung</a></li>
+                                </ul>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control" placeholder="Cari Property Baru">
+
+                                <!-- Button -->
+                                <button class="button-primary" type="button">
+                                    Cari
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -197,3 +197,75 @@ h2{
     transition: all 0.2s ease-in
 }
 
+/* Search Section */
+#search{
+    background-image: url(../asset/background.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#search p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input-cari{
+    height: 88px;
+}
+
+.input-cari:focus{
+    border:none;
+}
+
+.input-cari .button-secondary{
+    width: 200px;
+    height: 88px;
+    background-size: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    font-size: 18px;
+    font-weight: 500;
+    border:none;
+    border-radius: 0 0px 0 10px;
+}
+
+.input-cari .button-primary{
+    height: 88px;
+    background-color: var(--pr-color);
+    color: #FFFFFF;
+    border:none;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 0 10px 0 0;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0;
+    color: var(--pr-color);
+    border:none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #FFFFFF;
+    border-radius: 9px 0 0 0;
+}
+
