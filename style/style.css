@@ -356,3 +356,89 @@ bottom: 10px;
     font-size: 12px;
     color: var(--pr-color);
 }
+
+
+/* Fasilitas Section */
+.button-fitur{
+    width: 210px;
+    height: 58px;
+    background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+#fitur h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.card-fitur h5{
+    color:#FFFFFF;
+    font-size:36px;
+    font-weight: 600;
+}
+
+.card-fitur span{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.card-fitur h6 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-fitur button{
+    background-color: #FFFFFF;
+    color: var(--pr-color);
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-fitur .overlay{
+    background-color: rgba(0, 0, 0, 0.0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-fitur .overlay:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.button-arrow-left {
+    border:none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+ background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
+    padding: 0;
+}
+
+.button-arrow-left i {
+    font-size: 28px;
+    width: 61px;
+    height: 61px;
+    color: #FFFFFF;
+}
+
+.button-arrow-right {
+    border:none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+ background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
+    padding: 0;
+}
+
+.button-arrow-right i {
+    font-size: 28px;
+    width: 61px;
+    height: 61px;
+    color: #FFFFFF;
+}
