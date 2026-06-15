@@ -92,6 +92,13 @@ body {
     font-weight: 400;
 }
 
+.navbar-custom .navbar-brand {
+    color: #fff;
+}
+
+.navbar-scrolled .navbar-brand {
+    color: var(--pr-color);
+}
 /* Hero Section */
 #hero{
     background : linear-gradient(160deg, var(--pr-color), #0E0E0E);
