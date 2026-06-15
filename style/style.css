@@ -134,6 +134,7 @@ body {
 /* Layanan Section */
 #layanan{
     padding: 100px 0;
+    margin-top: -60px;
 }
 
 h2{
@@ -302,3 +303,56 @@ h2{
     border-radius: 9px 0 0 0;
 }
 
+/* Rekomendasi Section */
+#rekomendasi .card {
+    height: 415px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#rekomendasi .card-body H4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--pr-color);
+    line-height: .8rem;
+}
+
+#rekomendasi .card-body p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#rekomendasi .card:hover {
+    background:linear-gradient(170deg, var(--pr-color), #0E0E0E, #0E0E0E, var(--pr-color));
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        transform: translateY(-10px);
+}
+
+#rekomendasi .card:hover .card-body H4 {
+    color: #FFFFFF;
+    transition: all 0.2s ease-in;
+}
+
+#rekomendasi .card:hover .card-body p {
+    color: #FFFFFF;
+    transition: all 0.2s ease-in;
+}
+
+#rekomendasi .card-fasilitas {
+background-color: rgb(255, 255, 255);
+position: absolute;  
+left: 0;
+right: 0;
+bottom: 10px;
+}
+
+#rekomendasi .card-fasilitas span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--pr-color);
+}
+
+#rekomendasi .card-fasilitas p {
+    font-size: 12px;
+    color: var(--pr-color);
+}
