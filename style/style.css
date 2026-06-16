@@ -449,3 +449,20 @@ bottom: 10px;
     height: 61px;
     color: #FFFFFF;
 }
+
+/* Kontak Section */
+.social-icon i{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-icon i:hover{
+    color: #00985B;
+}
+
+#contact {
+    background-image: url(/asset/bg-contact.png);
+    margin-top :158px;
+}

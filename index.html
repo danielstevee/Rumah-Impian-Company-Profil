@@ -41,11 +41,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-custom">
         <div class="container">
-<a class="navbar-brand" href="#">
-    <img id="navbar-logo" src="asset/logo-putih.png" alt="Logo" width="30"
-        class="d-inline-block align-text-top me-3">
-    Rumah Impian
-</a>
+            <a class="navbar-brand" href="#">
+                <img id="navbar-logo" src="asset/logo-putih.png" alt="Logo" width="30"
+                    class="d-inline-block align-text-top me-3">
+                Rumah Impian
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -599,40 +599,95 @@
         </div>
         </div>
     </section>
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Butuh Konsultasi..? Silahkan kontak kami Kami Siap Membantu</h3>
+                        <div class="kontak social-icon">
+                            <h6>Kontak</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill me-3"></i>
+                                <a href="#">Jl. Pelajar Pejuang 123, Indonesia</a>
+                            </div>
 
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-telephone-fill me-3"></i>
+                                <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-envelope-fill me-3"></i>
+                                <a href="mailto:info@rumahimpian.com">info@rumahimpian.com</a>
+                            </div>
+                            <h6>Social Media</h6>
+                            <div class="social-icon">
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#">RumahImpian</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-contact w-100">
+                            <form>
+                                <h2>ada pertanyaan?</h2>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Masukan email anda disini...</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Pertanyaan anda...</label>
+                                </div>                                
+                        </div>
+                        <button type="submit" class="button-kontak">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-<script>
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar-custom');
-    const logo = document.getElementById('navbar-logo');
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar-custom');
+            const logo = document.getElementById('navbar-logo');
 
-    if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
 
-        // Ganti logo putih → hitam
-        logo.src = 'asset/logo-hitam.png';
+                // Ganti logo putih → hitam
+                logo.src = 'asset/logo-hitam.png';
 
-        // Ganti favicon
-        document.querySelector("link[rel='icon']").href =
-            'asset/vector-hitam.svg';
+                // Ganti favicon
+                document.querySelector("link[rel='icon']").href =
+                    'asset/vector-hitam.svg';
 
-    } else {
-        navbar.classList.remove('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
 
-        // Kembali ke logo putih
-        logo.src = 'asset/logo-putih.png';
+                // Kembali ke logo putih
+                logo.src = 'asset/logo-putih.png';
 
-        // Kembali ke favicon putih
-        document.querySelector("link[rel='icon']").href =
-            'asset/vector-putih.svg';
-    }
-});
-</script>
+                // Kembali ke favicon putih
+                document.querySelector("link[rel='icon']").href =
+                    'asset/vector-putih.svg';
+            }
+        });
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
