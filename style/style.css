@@ -237,9 +237,8 @@ h2{
     line-height: 25px;
     transition: all 0.2s ease-in
 }
-
 /* Search Section */
-#search{
+#search {
     background-image: url(../asset/background.png);
     height: 100vh;
     background-repeat: no-repeat;
@@ -264,33 +263,91 @@ h2{
     color: #FFFFFF;
 }
 
-.input-cari{
-    height: 80px;
+/* Wrapper luar: kotak putih + tombol Cari berdampingan */
+.input-cari {
+    display: flex;
+    align-items: stretch;
+    height: 60px;
+    gap: 0;
+    border: none;
 }
 
-.input-cari:focus{
-    border:none;
+/* Kotak putih berisi dropdown & input */
+.input-inner {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0 0 0 10px;
+    padding: 0 0px;
+    overflow: hidden;
+    border: none;
 }
 
-.input-cari .button-secondary{
-    width: 200px;
-    height: 80px;
-    background-size: rgba(255, 255, 255, 0.8);
-    color: var(--pr-color);
-    font-size: 18px;
+/* Garis pemisah antar dropdown */
+.input-inner .divider {
+    width: 1px;
+    height: 30px;
+    background-color: #d0d0d0;
+    flex-shrink: 0;
+    margin: 0 4px;
+    border: none;
+}
+
+/* Tombol dropdown di dalam kotak putih */
+.input-cari .button-secondary {
+    background: transparent;
+    color: #333;
+    font-size: 15px;
     font-weight: 500;
-    border:none;
-    border-radius: 0 0px 0 10px;
+    border: none;
+    padding: 0 16px;
+    height: 100%;
+    border: none;
+    white-space: nowrap;
 }
 
-.input-cari .button-primary{
-    height: 80px;
-    background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
+.input-cari .button-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Input teks */
+.input-inner .form-control {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    font-size: 15px;
+    color: #555;
+    flex: 1;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+}
+
+.input-inner .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+
+/* Tombol Cari — di luar kotak putih */
+.input-cari .button-primary {
+    height: 100%;
+background: linear-gradient(160deg, var(--pr-color), #0E0E0E) !important;
     color: #FFFFFF;
-    border:none;
-    font-size: 36px;
-    font-weight: 500;
-    border-radius: 0 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 0 10px 10px 0;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+}
+
+.input-cari .button-primary:hover {
+    background: #1a1a1a !important;
 }
 
 .nav-tabs {
@@ -304,10 +361,22 @@ h2{
     border:none;
 }
 
-.nav-tabs .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #FFFFFF;
-    border-radius: 9px 0 0 0;
+
+
+
+.jual{
+    border-radius: 10px 0 0 0 !important;
+}
+.property{
+    border-radius: 0 10px 0 0 !important;
+}
+.sewa{
+ border-radius: 0 0 0 0 !important;
+}
+
+
+#myTab {
+    border-bottom: none !important;  /* hapus garis bawah bawaan Bootstrap */
 }
 
 /* Rekomendasi Section */
