@@ -290,7 +290,7 @@ h2{
     height: 30px;
     background-color: #d0d0d0;
     flex-shrink: 0;
-    margin: 0 4px;
+    margin: 0 10px;
     border: none;
 }
 
@@ -355,10 +355,23 @@ background: linear-gradient(160deg, var(--pr-color), #0E0E0E) !important;
 }
 
 .nav-tabs .nav-link {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0 0 0 0;
-    color: var(--pr-color);
-    border:none;
+    border: none;
+    border-radius: 0;
+    color: #999898;              /* ← Warna teks tab non-active */
+    background-color: #D6D6D6;   /* ← Background tab non-active */
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #FFFFFF;   /* ← Active tab jadi putih */
+    color: #333333;              /* ← Teks active lebih gelap */
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:not(.active):hover {
+    background-color: #C8C8C8;  
+    color: #777777;
 }
 
 
@@ -366,6 +379,7 @@ background: linear-gradient(160deg, var(--pr-color), #0E0E0E) !important;
 
 .jual{
     border-radius: 10px 0 0 0 !important;
+    
 }
 .property{
     border-radius: 0 10px 0 0 !important;
