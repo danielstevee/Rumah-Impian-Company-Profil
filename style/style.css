@@ -459,7 +459,7 @@ bottom: 10px;
 }
 
 .social-icon i:hover{
-    color: #00985B;
+    color: #252525;
 }
 
 #contact {
@@ -469,7 +469,7 @@ bottom: 10px;
 }
 
 #contact h3 {
-
+    width: 441px ;
     font-size: 40px;
     font-weight: 600;
     line-height: 60px;
@@ -546,4 +546,28 @@ bottom: 10px;
     color:#ffff;
     font-size: 35px;
     font-weight: 600;
+}
+
+/* Footer Section */
+
+#footer .container-fluid{
+    background:linear-gradient(160deg, var(--pr-color), #0E0E0E);
+height: 212px;
+    display: flex;
+    align-items: center;
+}
+
+#footer h5{
+    color: #fff;
+    font-size: 20px;
+}
+#footer a{
+    color: #fff;
+    padding: 0 0 16px 16px;
+    font-size: 16px;
+    text-decoration: none;
+}
+#footer p {
+    color: #fff;
+    font-size: 16px;
 }
