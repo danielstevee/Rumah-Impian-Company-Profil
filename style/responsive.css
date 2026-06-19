@@ -1,9 +1,184 @@
-@media screen and (max-width: 922px){
+@media screen and (max-width:  991px){
+ .hero-tagline h1 {
+        line-height: 52px;
+        margin-left: 15px;
+    }
+    
+    .hero-tagline p {
+        margin-left: 15px;
+    }
+    
+    .hero-tagline .button-lg-primary {
+        margin-left: 15px;
+    }
+    
+    .img-hero {
+        width: 90%;
+        height: auto;
+    }
+    
+    h2 {
+        font-size: 35px !important;
+    }
+    
+    .card-layanan {
+        margin: 15px 0;
+    }
 
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 776px){
+    .hero-tagline h1{
+        line-height: 52px;
+        margin-left: 15px;
+    }
+        .hero-tagline p{
+        margin-left: 15px;
+    }
+    .hero-tagline .button-lg-primary{
+        margin-left: 15px;
+    }
+    .img-hero{
+        width: 90%;
+        height: auto;
+    }
+    h2{
+        font-size: 35px !important;
+    }
+    .card-layanan{
+        margin: 15px 0;
+    }
+    #search h2{
+        font-size: 40px !important;
+        line-height: 52px !important;
+        
+    }
+    #search p{
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+    
+    /* Tab lebih kecil */
+    .nav-tabs .nav-link {
+        font-size: 12px;
+        padding: 8px 12px;
+        background-color: #d2d1d1 ;
+    }
+    
+    /* === INPUT CARI === */
+    .input-cari {
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+    }
+    
+    .input-inner {
+        flex-direction: column;
+        border-radius: 0 10px 10px 10px;
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    /* Divider di mobile jadi horizontal */
+    .input-inner .divider {
+        width: 100%;
+        height: 1px;
+        margin: 4px 0;
+    }
+    
+    /* Dropdown button full width */
+    .input-cari .button-secondary {
+        width: 100% !important;
+        font-size: 13px;
+        height: 30px;
+        justify-content: center;
+    }
+    
+    /* Input text full width */
+    .input-inner .form-control {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 17px;
+        margin: 2px 0;
+    }
+    
+    /* Tombol Cari full width */
+    .input-cari .button-primary {
+        width: 100%;
+        height: 48px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+        #search .input-inner .form-control {
+        width: 100% !important;
+        height: 45px !important;        /* lebih besar */
+        font-size: 14px !important;     /* text lebih gede */
+        padding: 10px 12px !important;  /* padding dalam */
+        text-align: left !important;    /* jangan center */
+        background: #fff !important;    /* putih biar keliatan */
+        border: 1px solid #ddd !important;
+        border-radius: 6px !important;
+    }
+     /* ============================================
+       REKOMENDASI CARD (Perbaikan)
+       ============================================ */
+    #rekomendasi .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #rekomendasi .col-12,
+    #rekomendasi .col-md-6,
+    #rekomendasi .col-lg-4 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    #rekomendasi .card {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+    
+    #rekomendasi .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    
+    #rekomendasi .card-body h4 {
+        font-size: 20px;
+    }
+    
+    #rekomendasi .card-body p {
+        font-size: 13px;
+    }
+    
+    #rekomendasi .card-fasilitas {
+        position: relative !important;
+        bottom: auto !important; 
+        margin-left: -8px;   
+        margin-right: -8px; 
+          
+    }
+    
+    #rekomendasi .card-fasilitas span {
+        font-size: 16px;
+    }
+    
+    #rekomendasi .card-fasilitas p {
+        font-size: 11px;
+    }
+
     
 }
+
+
 @media screen and (max-width: 350px){
-    
+        .input-cari .button-secondary {
+        width: 30% ;
+        font-size: 10px;
+        height: 60px;
+        }
 }

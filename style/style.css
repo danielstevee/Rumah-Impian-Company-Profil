@@ -100,12 +100,23 @@ body {
     color: var(--pr-color);
 }
 /* Hero Section */
-#hero{
-    background : linear-gradient(160deg, var(--pr-color), #0E0E0E);
-    height: 100vh;
+/* Reset dasar — taruh di ATAS file CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* cegah horizontal scroll */
     width: 100%;
 }
 
+/* Hero fix */
+#hero {
+    background: linear-gradient(160deg, var(--pr-color), #0E0E0E);
+    height: 100vh;
+    width: 100vw;        /* ← ganti dari 100% ke 100vw */
+    max-width: 100%;     /* ← jaga-jaga biar tidak overflow */
+    position: relative;
+    overflow: hidden;    /* ← cegah konten keluar */
+}
 .img-hero{
     height: 80%;
     z-index: 2;
@@ -145,7 +156,7 @@ body {
 }
 
 h2{
-    font-size: 48px;
+    font-size: 43px !important ;
     font-weight: 500;
     color: var(--pr-color);
 }
@@ -262,6 +273,13 @@ h2{
     text-align: center;
     color: #FFFFFF;
 }
+#search .form-control {
+    width: 100% !important;           /* full width, bukan 485px */
+    height: 100% !important;            /* ikut parent */
+    background: transparent !important; /* bukan abu-abu */
+    border-radius: 0 !important;
+}
+
 
 /* Wrapper luar: kotak putih + tombol Cari berdampingan */
 .input-cari {
