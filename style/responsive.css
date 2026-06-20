@@ -1,4 +1,90 @@
 @media screen and (max-width:  991px){
+    
+/* Default: icon putih */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Saat scroll: icon gelap */
+.navbar-scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2860, 60, 60, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Border toggler juga ikut berubah */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-scrolled .navbar-toggler {
+    border-color: rgba(60, 60, 60, 0.5) !important;
+}
+      
+    /* Navbar collapse default (gelap) */
+    .navbar-collapse {
+        background: #292929;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    
+    .navbar-collapse .nav-link {
+        color: #fff !important;
+        padding: 14px 0;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* TOMBOL DAFTAR — Background putih, teks gelap */
+    .navbar-collapse .button-primary {
+        width: 100%;
+        height: 48px;
+        background-color: #fff !important;      /* Putih */
+        color: #333 !important;                  /* Teks gelap */
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 8px 0;
+        border-radius: 8px;
+    }
+    
+    /* TOMBOL MASUK — Background transparan, border putih, teks putih */
+    .navbar-collapse .button-secondary {
+        width: 100%;
+        height: 48px;
+        background-color: transparent !important;
+        color: #fff !important;                  /* Teks putih */
+        border: 2px solid #fff !important;       /* Border putih */
+        font-size: 16px;
+        font-weight: 600;
+        margin: 8px 0;
+        border-radius: 8px;
+    }
+    
+    /* ============================================
+       NAVBAR SCROLLED (Putih) — Override
+       ============================================ */
+    .navbar-scrolled .navbar-collapse {
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    
+    .navbar-scrolled .navbar-collapse .nav-link {
+        color: #333 !important;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    /* TOMBOL DAFTAR saat scrolled — Background gelap, teks putih */
+    .navbar-scrolled .navbar-collapse .button-primary {
+        background: linear-gradient(160deg, #3c3c3c, #0E0E0E) !important;
+        color: #fff !important;
+    }
+    
+    /* TOMBOL MASUK saat scrolled — Background transparan, border gelap, teks gelap */
+    .navbar-scrolled .navbar-collapse .button-secondary {
+        background-color: transparent !important;
+        color: #333 !important;
+        border: 2px solid #333 !important;
+    }
  .hero-tagline h1 {
         line-height: 52px;
         margin-left: 15px;
@@ -23,6 +109,17 @@
     
     .card-layanan {
         margin: 15px 0;
+    }
+        .card-layanan {
+        width: 100% !important;
+        height: auto !important;        /* Auto height biar tidak terpotong */
+        min-height: 380px;              /* Minimal tinggi */
+        padding: 40px 24px;
+        margin: 12px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -170,15 +267,34 @@
     #rekomendasi .card-fasilitas p {
         font-size: 11px;
     }
-
+    
     
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 583px){
         .input-cari .button-secondary {
         width: 30% ;
         font-size: 10px;
         height: 60px;
         }
+        
+.button-arrow-left {
+    margin-left: 15px;
+}
+
+
+.button-arrow-right {
+    padding: 0;
+    margin-right: 15px;
+}
+.input-cari .button-secondary {
+    width: 100% !important;
+    font-size: 15px;
+    height: 48px;           /* Lebih tinggi */
+    justify-content: flex-start;  /* Rata kiri, bukan center */
+    padding-left: 16px;
+}
+
+
 }

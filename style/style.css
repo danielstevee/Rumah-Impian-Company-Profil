@@ -32,13 +32,15 @@ body {
 }
 
 /* Text hitam saat scroll */
+
 .navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-brand{
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .button-primary {
     color: var(--pr-color) !important;
 }
 
 /* Active link */
-.navbar-scrolled .nav-link.active{
+.navbar-scrolled .nav-link.active {
     font-weight: 700;
     color: #000000 !important;
 }
@@ -80,7 +82,31 @@ body {
     border: none;
     font-size: 16px;
     font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}/* HOVER desktop */
+.button-secondary:hover {
+    background-color: #f0f0f0;
+    color: var(--pr-color);
 }
+
+/* ============================================
+   SAAT NAVBAR SCROLLED (Putih)
+   ============================================ */
+
+/* Default scrolled */
+.navbar-scrolled .button-secondary,
+.navbar-scrolled .button-secondary:focus {
+    background-color: var(--pr-color) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+/* Hover */
+.navbar-scrolled .button-secondary:hover {
+    background-color: #2b2b2b !important;
+}
+
 
 .button-primary {
     width: 133px;
