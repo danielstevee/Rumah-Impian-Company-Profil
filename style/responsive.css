@@ -122,6 +122,23 @@
         align-items: center;
     }
 
+    #contact h3{
+        font-size: 35px !important;
+        width: 100%;
+    }
+    
+    .card-contact h2 {
+        font-size: 30px !important;    /* Kecilkan dari 40px */
+        line-height: 32px !important;
+        word-break: keep-all;           /* Jangan pecah kata */
+    }
+
+
+    .card-contact {
+        height: auto;
+             
+    }
+        /* Samakan padding container */
 }
 @media screen and (max-width: 776px){
     .hero-tagline h1{
@@ -273,6 +290,26 @@
 
 
 @media screen and (max-width: 583px){
+      /* Jarak antara teks dan tepi layar */
+    #contact .col-md-6:first-child {
+        padding: 0 20px !important;     /* Padding kiri kanan */
+    }
+    
+    /* Atau pakai margin */
+    #contact h3,
+    .kontak{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    /* Jarak card ke atas */
+    #contact .card-contact {
+        margin-top: 50px !important;
+    }
+
+#contact .card-contact{
+    margin-top: 50px !important;
+}
         .input-cari .button-secondary {
         width: 30% ;
         font-size: 10px;
@@ -295,6 +332,41 @@
     justify-content: flex-start;  /* Rata kiri, bukan center */
     padding-left: 16px;
 }
+  #footer .container-fluid {
+        height: auto;
+        padding: 32px 16px;
+        align-items: center;
+    }
+    #footer .container-fluid{
+ height: auto;
+        padding: 30px 0 !important;
+        display: flex;                    /* Flexbox */
+        justify-content: center;          /* Center horizontal */
+        align-items: center;       
+    }
+    #footer .container {
+        margin-left: 45px !important;
+    }
+
+
+    
+
+    
+    
+    #footer p {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: -35px !important;
+    }
+    #contact a {
+        margin-bottom: 50px !important;
+    }
+
+    #contact h3 {
+        font-size: 28px !important;
+        line-height: 50px !important;    /* Kecilkan dari 40px */
+        margin-bottom: 16px;
+    }
 
 
 }
