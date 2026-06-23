@@ -1,5 +1,5 @@
 
-readme_content = """# 🏠 Rumah Impian - Marketplace Properti
+🏠 Rumah Impian - Marketplace Properti
 
 > Website properti **statis → fullstack** dengan sistem booking dan pembayaran Midtrans (mode uji coba/Sandbox).
 
