@@ -321,11 +321,4 @@ ngrok http 3000
 Dibuat dengan ❤️ untuk belajar membuat website fullstack dari nol.
 
 **Teknologi**: HTML + CSS + Bootstrap + Node.js + Express + SQLite + Midtrans
-"""
 
-# Save to file
-with open('/mnt/agents/output/README.md', 'w', encoding='utf-8') as f:
-    f.write(readme_content)
-
-print("✅ README.md berhasil dibuat dalam Bahasa Indonesia!")
-print(f"📄 Total karakter: {len(readme_content)}")
